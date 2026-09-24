@@ -5,27 +5,18 @@ const projects = [
   {
     title: "Solo Gadget Mart",
     link: "https://sologadgetmart.vercel.app/",
-    subtitle: "Full-stack e-commerce platform",
-    tags: ["Next.js", "Supabase", "Razorpay", "TypeScript"],
     subtitle: "",
     tags: ["Next.js", "Supabase", "Razorpay"],
     bullets: [
-      "Designed and built the full stack solo — database schema, Row-Level Security policies, authentication, and admin dashboard",
-      "Implemented real-time order alerts via WebSockets so admins see new orders instantly",
-      "Built global cart state management and integrated Razorpay for end-to-end checkout",
       "Full-stack e-commerce platform with admin dashboard, WebSocket order alerts, and global cart state management",
     ],
   },
   {
     title: "Lume Jewellery",
     link: "https://lumebyesandes.web.app/",
-    subtitle: "Serverless e-commerce web app",
     subtitle: "",
     tags: ["Flutter Web", "Firebase", "Provider", "Razorpay"],
     bullets: [
-      "Built a serverless Flutter Web storefront using Firestore, fully client-driven with no custom backend",
-      "Handled concurrent inventory management with Firestore transactions to prevent overselling",
-      "Integrated Razorpay and structured Firestore data models for products, orders, and transactions",
       "Serverless e-commerce web app with Razorpay checkout and Firestore transactions for concurrent inventory management",
     ],
   },

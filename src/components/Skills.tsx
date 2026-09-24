@@ -1,36 +1,13 @@
 const categories = [
   {
     label: "// mobile",
-    skills: [
-      "Flutter",
-      "Dart",
-      "iOS & Android deployment",
-      "Bloc",
-      "Riverpod",
-      "Provider",
-    ],
     skills: ["Flutter", "Dart", "iOS & Android"],
   },
   {
-    label: "// web & full-stack",
-    skills: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "JavaScript",
-      "Tailwind CSS",
-      "HTML5/CSS3",
-    ],
     label: "// state management",
     skills: ["Bloc", "Riverpod", "Provider", "GetX"],
   },
   {
-    label: "// backend & data",
-    skills: [
-      "Supabase (PostgreSQL, RLS, Auth)",
-      "Firebase (Firestore, Cloud Functions)",
-      "REST APIs",
-    ],
     label: "// backend & integration",
     skills: [
       "REST APIs",
@@ -41,21 +18,12 @@ const categories = [
     ],
   },
   {
-    label: "// integrations & tools",
-    skills: ["Agora SDK", "Pusher", "Razorpay", "Git", "CI/CD"],
     label: "// tools & other",
     skills: [
       "Git",
       "CI/CD",
       "HTML/CSS/JS",
       "AI Prompt Engineering (Certified)",
-    ],
-  },
-  {
-    label: "// workflow",
-    skills: [
-      "AI-Assisted Development / Prompt Engineering (Certified)",
-      "Rapid Prototyping",
     ],
   },
 ];

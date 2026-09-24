@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -44,7 +44,7 @@ const experiences = [
   {
     role: "Associate Software Engineer",
     company: "Lilac Infotech",
-    date: "02/2026 – Present",
+    date: "02/2026 â€“ Present",
     location: "Calicut, Kerala",
     points: [
       "Build and deploy cross-platform Flutter applications for iOS and Android in a production engineering team",
@@ -59,7 +59,7 @@ const experiences = [
   {
     role: "Flutter Developer Intern",
     company: "Tomercon Developers",
-    date: "04/2025 – 09/2025",
+    date: "04/2025 â€“ 09/2025",
     location: "",
     points: [
       "Built and maintained Flutter applications alongside senior developers, contributing features, bug fixes, and performance tuning",
@@ -71,7 +71,7 @@ const experiences = [
   {
     role: "Flutter Developer Trainee",
     company: "HACA (Haris & Co. Academy)",
-    date: "07/2024 – 12/2024",
+    date: "07/2024 â€“ 12/2024",
     location: "",
     points: [
       "Completed an intensive 6-month Flutter/Dart training program covering core mobile development fundamentals",
@@ -104,14 +104,14 @@ function ExperienceItem({
         {/* Header */}
         <div>
           <h3 className="font-display font-semibold text-xl md:text-2xl text-text">
-            {exp.role} <span className="text-muted font-normal mx-1">—</span>{" "}
+            {exp.role} <span className="text-muted font-normal mx-1">â€”</span>{" "}
             <span className="text-accent-blue">{exp.company}</span>
           </h3>
           <div className="font-mono text-xs md:text-sm text-muted mt-2 tracking-wide uppercase flex flex-wrap gap-x-2 gap-y-1">
             <span>{exp.date}</span>
             {exp.location && (
               <>
-                <span className="hidden sm:inline">·</span>
+                <span className="hidden sm:inline">Â·</span>
                 <span>{exp.location}</span>
               </>
             )}

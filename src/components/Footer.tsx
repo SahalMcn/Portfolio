@@ -1,11 +1,11 @@
-import { Github, Linkedin } from "lucide-react";
+﻿import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="border-t border-dot py-8 mt-12">
       <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="font-mono text-sm text-muted">
-          © 2026 Sahal Muhammed C N
+          Â© 2026 Sahal Muhammed C N
         </p>
         
         <div className="flex items-center space-x-4">

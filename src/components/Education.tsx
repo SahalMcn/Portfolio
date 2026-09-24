@@ -1,4 +1,4 @@
-export default function Education() {
+﻿export default function Education() {
   const languages = ["English (Fluent)", "Malayalam (Native)", "Tamil (Intermediate)", "Hindi (Basic)"];
 
   return (
@@ -13,7 +13,7 @@ export default function Education() {
             Bachelor of Commerce (B.Com), Specialization in Computer Applications
           </h3>
           <p className="font-mono text-sm text-muted uppercase tracking-wide">
-            University of Calicut · 08/2020 – 06/2024
+            University of Calicut Â· 08/2020 â€“ 06/2024
           </p>
         </div>
 

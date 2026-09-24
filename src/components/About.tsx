@@ -13,22 +13,14 @@ export default function About() {
       <div className="md:w-2/3 space-y-12 max-w-2xl">
         <div className="space-y-6 font-body text-lg leading-relaxed text-muted">
           <p>
-            I'm a Flutter developer with production experience across mobile
-            apps, real-time communication features, and third-party SDK
-            integration — I went from trainee to intern to full-time Associate
-            Software Engineer in about two years. Flutter Developer with
-            production experience building and maintaining cross-platform iOS
-            and Android apps in Dart. Strong in state management (Bloc,
-            Riverpod, Provider), REST API integration, Firebase, and third-party
-            SDKs such as Agora and Pusher.
+            Flutter Developer with production experience building and
+            maintaining cross-platform iOS and Android apps in Dart. Strong in
+            state management (Bloc, Riverpod, Provider), REST API integration,
+            Firebase, and third-party SDKs such as Agora and Pusher.
           </p>
           <p>
-            Outside my day job, I design and ship full-stack e-commerce
-            platforms solo — database schema, payment integration, real-time
-            order alerts, and concurrent inventory handling — moving comfortably
-            between Flutter, Next.js, and backend work. Progressed from trainee
-            to intern to full-time engineer, working in agile teams alongside
-            backend and DevOps engineers.
+            Progressed from trainee to intern to full-time engineer, working in
+            agile teams alongside backend and DevOps engineers.
           </p>
         </div>
 

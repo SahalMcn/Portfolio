@@ -18,14 +18,18 @@ function useInView(options = { threshold: 0.1, triggerOnce: true }) {
       return;
     }
 
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsInView(true);
-        if (options.triggerOnce) {
-          observer.unobserve(element);
+    const { threshold, triggerOnce } = options;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          if (triggerOnce) {
+            observer.unobserve(element);
+          }
         }
-      }
-    }, options);
+      },
+      { threshold },
+    );
 
     observer.observe(element);
     return () => {

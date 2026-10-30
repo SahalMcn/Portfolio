@@ -6,32 +6,35 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["500", "700"],
   variable: "--font-display",
+  display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-body",
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-mono",
+  display: "swap",
 });
 
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Sahal Muhammed C N — Flutter Developer",
+  title: "Sahal Muhammed C N — Flutter Developer | Mobile Application Developer",
   description:
-    "Mobile-first developer who ships production Flutter apps by day and full-stack e-commerce platforms by night.",
+    "Flutter Developer with hands-on experience building and shipping production mobile applications on Google Play and App Store with 10K+ downloads.",
   openGraph: {
-    title: "Sahal Muhammed C N — Flutter Developer",
+    title: "Sahal Muhammed C N — Flutter Developer | Mobile Application Developer",
     description:
-      "Mobile-first developer who ships production Flutter apps by day and full-stack e-commerce platforms by night.",
-    url: "https://sahal.dev",
+      "Flutter Developer with hands-on experience building and shipping production mobile applications on Google Play and App Store with 10K+ downloads.",
+    url: "https://sahaldeveloper.vercel.app",
     siteName: "Sahal Muhammed C N Portfolio",
     locale: "en_US",
     type: "website",

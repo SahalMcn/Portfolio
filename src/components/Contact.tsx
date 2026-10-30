@@ -1,17 +1,17 @@
-﻿export default function Contact() {
+export default function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-32 max-w-7xl mx-auto px-6 py-16 lg:py-24 flex flex-col md:flex-row gap-12 lg:gap-24"
+      className="scroll-mt-32 max-w-7xl mx-auto px-6 py-20 lg:py-24 flex flex-col md:flex-row gap-12 lg:gap-20"
     >
-      <div className="md:w-1/3">
-        <h2 className="font-display font-bold text-3xl md:text-4xl text-text">
+      <div className="md:w-1/4">
+        <h2 className="font-display font-bold text-3xl md:text-4xl text-text sticky top-28">
           Contact
         </h2>
       </div>
 
-      <div className="md:w-2/3 max-w-3xl">
-        <h3 className="font-display font-bold text-5xl md:text-6xl text-text mb-12 tracking-tight">
+      <div className="md:w-3/4 flex-1">
+        <h3 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl text-text mb-12 tracking-tight">
           Let&apos;s build something.
         </h3>
 
@@ -32,7 +32,19 @@
               +91 8592020391
             </a>
           </li>
-          <li className="text-muted cursor-default">Calicut, Kerala</li>
+          <li>
+            <a
+              href="https://linkedin.com/in/sahalmuhammedcn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block hover:text-accent-blue hover:underline decoration-accent-blue underline-offset-8 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue rounded-sm"
+            >
+              linkedin.com/in/sahalmuhammedcn
+            </a>
+          </li>
+          <li className="text-muted cursor-default text-lg md:text-xl pt-2">
+            Calicut, Kerala, India
+          </li>
         </ul>
       </div>
     </section>

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState, useRef } from "react";
 import { ArrowDown } from "lucide-react";
@@ -52,21 +52,21 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[calc(100vh-80px)] pt-20 flex flex-col justify-center max-w-7xl mx-auto px-6"
+      className="relative pt-4 sm:pt-8 md:pt-12 pb-10 md:pb-16 max-w-7xl mx-auto px-6"
     >
       <div className="flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
         {/* Left Side: Text Content (55%) */}
         <div className="w-full lg:w-[55%] space-y-8 z-10">
           <div className="space-y-4">
-            <p className="font-mono text-sm text-muted tracking-wide uppercase">
-              Flutter Developer · Full-Stack Side Projects
+            <p className="font-mono text-sm text-accent-blue tracking-wider uppercase font-semibold">
+              Flutter Developer · Mobile Application Developer
             </p>
-            <p className="font-mono text-text">Sahal Muhammed C N</p>
+            <p className="font-mono text-text text-base">Sahal Muhammed C N</p>
 
-            <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight text-text">
-              Flutter Developer from <br className="hidden md:block" />
-              <span className="relative inline-block mt-2">
-                Calicut, Kerala
+            <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight text-text">
+              Building scalable <br className="hidden md:block" />
+              <span className="relative inline-block mt-1">
+                production mobile apps
                 {/* SVG Underline Accent */}
                 <svg
                   className="absolute -bottom-2 left-0 w-full h-4 text-accent-yellow z-[-1]"
@@ -100,18 +100,18 @@ export default function Hero() {
             </h1>
           </div>
 
-          <p className="font-body text-lg text-muted max-w-xl leading-relaxed">
-            Mobile-first developer who ships production Flutter apps by day and
-            full-stack e-commerce platforms by night — from database schema to
-            payment integration.
+          <p className="font-body text-base md:text-lg text-muted max-w-xl leading-relaxed">
+            Hands-on mobile engineer shipping production Flutter apps to Google Play and the App Store.
+            Specialized in BLoC state management, Domain-Driven Design (DDD), Agora RTC audio/video streaming,
+            Pusher real-time events, and global payment flows (AZUL & PayPal).
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-4">
+          <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-accent-blue text-white font-body font-medium rounded-lg hover:bg-accent-blue/90 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:ring-accent-blue"
+              className="px-8 py-3 bg-accent-blue text-white font-body font-medium rounded-lg hover:bg-accent-blue/90 transition-all shadow-sm hover:shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:ring-accent-blue"
             >
               View Résumé
             </a>
@@ -126,7 +126,7 @@ export default function Hero() {
         </div>
 
         {/* Right Side: Terminal Card (45%) */}
-        <div className="w-full lg:w-[45%] relative mt-12 lg:mt-0 z-10">
+        <div className="w-full lg:w-[45%] relative mt-8 lg:mt-0 z-10">
           {/* Decorative Floating Dots */}
           {!prefersReducedMotion && (
             <>
@@ -169,35 +169,58 @@ export default function Hero() {
               </div>
               <div className="flex-1 text-center">
                 <span className="font-mono text-xs text-muted">
-                  whoami.dart
+                  sahal_developer.dart
                 </span>
               </div>
             </div>
 
             {/* Code Body */}
-            <div className="p-6 font-mono text-sm leading-relaxed overflow-x-auto">
-              <div className="text-muted mb-2">{"// role"}</div>
+            <div className="p-6 font-mono text-xs sm:text-sm leading-relaxed overflow-x-auto">
+              <div className="text-muted mb-2">{"// mobile application developer"}</div>
               <div>
                 <span className="text-accent-blue">class</span>{" "}
-                <span className="text-text">Sahal {"{"}</span>
+                <span className="text-text">SahalDeveloper {"{"}</span>
               </div>
               <div className="pl-4 mt-1">
-                <span className="text-text">stack = [</span>
-                <span className="text-text">{"'Flutter'"}</span>
-                <span className="text-text">, </span>
-                <span className="text-text">{"'Next.js'"}</span>
-                <span className="text-text">, </span>
-                <span className="text-text">{"'Supabase'"}</span>
-                <span className="text-text">];</span>
-              </div>
-              <div className="pl-4 mt-1">
-                <span className="text-text">based_in = </span>
+                <span className="text-text">basedIn = </span>
                 <span className="text-text">{"'Calicut, Kerala'"}</span>
                 <span className="text-text">;</span>
               </div>
-              <div className="pl-4 mt-4">
+              <div className="pl-4 mt-2">
+                <span className="text-muted">{"// architecture & core stack"}</span>
+              </div>
+              <div className="pl-4">
+                <span className="text-text">core = [</span>
+                <span className="text-accent-blue">{"'Flutter'"}</span>
+                <span className="text-text">, </span>
+                <span className="text-accent-blue">{"'BLoC'"}</span>
+                <span className="text-text">, </span>
+                <span className="text-accent-blue">{"'DDD'"}</span>
+                <span className="text-text">];</span>
+              </div>
+              <div className="pl-4 mt-1">
+                <span className="text-text">realtime = [</span>
+                <span className="text-text">{"'Pusher'"}</span>
+                <span className="text-text">, </span>
+                <span className="text-text">{"'Agora RTC'"}</span>
+                <span className="text-text">, </span>
+                <span className="text-text">{"'FCM'"}</span>
+                <span className="text-text">];</span>
+              </div>
+              <div className="pl-4 mt-1">
+                <span className="text-text">payments = [</span>
+                <span className="text-text">{"'AZUL'"}</span>
+                <span className="text-text">, </span>
+                <span className="text-text">{"'PayPal'"}</span>
+                <span className="text-text">, </span>
+                <span className="text-text">{"'Razorpay'"}</span>
+                <span className="text-text">];</span>
+              </div>
+              <div className="pl-4 mt-3">
+                <span className="text-accent-blue">void</span>{" "}
+                <span className="text-text">deploy() =&gt; </span>
                 <span className="text-accent-blue">print</span>
-                <span className="text-text">(stack);</span>
+                <span className="text-text">({"\"10K+ active downloads\""});</span>
               </div>
               <div>
                 <span className="text-text">{"}"}</span>
@@ -211,7 +234,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Down Cue */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="mt-8 md:mt-12 flex flex-col items-center gap-2">
         <span className="font-mono text-xs text-muted uppercase tracking-widest">
           Scroll
         </span>

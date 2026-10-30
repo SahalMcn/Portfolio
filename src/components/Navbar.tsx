@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import { Github, Linkedin, Menu, X } from "lucide-react";
@@ -67,7 +67,7 @@ export default function Navbar() {
             : "border-b border-transparent bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
           {/* Logo */}
           <Link
             href="#"
@@ -97,7 +97,7 @@ export default function Navbar() {
 
             <div className="flex items-center space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/SahalMcn"
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 rounded-full border border-muted flex items-center justify-center text-muted hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"
@@ -106,7 +106,7 @@ export default function Navbar() {
                 <Github size={16} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/sahalmuhammedcn"
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 rounded-full border border-muted flex items-center justify-center text-muted hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"
@@ -139,7 +139,7 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-50 md:hidden flex flex-col bg-card bg-dot-pattern">
-          <div className="px-6 h-20 flex items-center justify-between border-b border-dot bg-card/90 backdrop-blur-sm">
+          <div className="px-6 h-16 md:h-20 flex items-center justify-between border-b border-dot bg-card/90 backdrop-blur-sm">
             <Link
               href="#"
               onClick={(e) => handleSmoothScroll(e, "body")}
@@ -158,6 +158,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex-1 overflow-y-auto px-8 py-12 flex flex-col space-y-8 bg-card/70">
+
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -171,7 +172,7 @@ export default function Navbar() {
 
             <div className="pt-8 flex space-x-6 border-t border-dot">
               <a
-                href="https://github.com"
+                href="https://github.com/SahalMcn"
                 target="_blank"
                 rel="noreferrer"
                 className="w-12 h-12 rounded-full border border-muted flex items-center justify-center text-text hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"
@@ -180,7 +181,7 @@ export default function Navbar() {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/sahalmuhammedcn"
                 target="_blank"
                 rel="noreferrer"
                 className="w-12 h-12 rounded-full border border-muted flex items-center justify-center text-text hover:bg-accent-blue hover:text-white hover:border-accent-blue transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue"

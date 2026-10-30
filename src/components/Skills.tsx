@@ -1,29 +1,43 @@
 const categories = [
   {
-    label: "// mobile",
-    skills: ["Flutter", "Dart", "iOS & Android"],
+    label: "// Mobile Development",
+    skills: ["Flutter", "Dart", "iOS & Android", "Figma-to-Flutter UI", "Bloc", "Provider", "Riverpod"],
   },
   {
-    label: "// state management",
-    skills: ["Bloc", "Riverpod", "Provider", "GetX"],
+    label: "// Architecture & Design Patterns",
+    skills: [
+      "Domain-Driven Design (DDD)",
+      "Clean Architecture",
+      "Repository Pattern",
+      "State Management",
+      "Reusable UI Component Architecture",
+    ],
   },
   {
-    label: "// backend & integration",
+    label: "// Backend, APIs & Real-Time",
     skills: [
       "REST APIs",
-      "Firebase (Auth, Firestore)",
-      "Agora SDK",
-      "Pusher (WebSocket)",
+      "Pusher (WebSockets)",
+      "Agora RTC (Video & Audio)",
+      "Firebase Cloud Messaging (FCM)",
+      "Firebase Auth & Firestore",
+      "AZUL Gateway",
+      "PayPal",
       "Razorpay",
     ],
   },
   {
-    label: "// tools & other",
+    label: "// Tooling, Mobile Features & Testing",
     skills: [
-      "Git",
-      "CI/CD",
-      "HTML/CSS/JS",
-      "AI Prompt Engineering (Certified)",
+      "Git & GitHub",
+      "CI/CD Workflows",
+      "Background Location",
+      "Dynamic PDF Generation",
+      "Multi-Language Localization",
+      "Deep Linking",
+      "Firebase Crashlytics",
+      "Skeletonizer Shimmer",
+      "Postman",
     ],
   },
 ];
@@ -32,34 +46,32 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="scroll-mt-32 max-w-7xl mx-auto px-6 py-16 lg:py-24 flex flex-col md:flex-row gap-12 lg:gap-24"
+      className="scroll-mt-32 max-w-7xl mx-auto px-6 py-20 lg:py-24 flex flex-col md:flex-row gap-12 lg:gap-20"
     >
-      <div className="md:w-1/3">
-        <h2 className="font-display font-bold text-3xl md:text-4xl text-text">
+      <div className="md:w-1/4">
+        <h2 className="font-display font-bold text-3xl md:text-4xl text-text sticky top-28">
           Skills
         </h2>
       </div>
 
-      <div className="md:w-2/3 max-w-3xl">
-        <div className="space-y-12">
-          {categories.map((category, index) => (
-            <div key={index} className="space-y-4">
-              <div className="font-mono text-sm text-muted tracking-wide">
-                {category.label}
-              </div>
-              <div className="flex flex-wrap gap-3">
-                {category.skills.map((skill, i) => (
-                  <div
-                    key={i}
-                    className="font-body text-text bg-card border border-dot px-4 py-2 rounded-lg hover:text-accent-blue hover:border-accent-blue/50 transition-colors cursor-default shadow-sm"
-                  >
-                    {skill}
-                  </div>
-                ))}
-              </div>
+      <div className="md:w-3/4 flex-1 space-y-10">
+        {categories.map((category, index) => (
+          <div key={index} className="space-y-3">
+            <div className="font-mono text-xs uppercase tracking-widest text-accent-blue font-semibold">
+              {category.label}
             </div>
-          ))}
-        </div>
+            <div className="flex flex-wrap gap-2.5">
+              {category.skills.map((skill, i) => (
+                <div
+                  key={i}
+                  className="font-body text-sm text-text bg-card border border-dot px-3.5 py-1.5 rounded-lg hover:text-accent-blue hover:border-accent-blue/50 transition-colors cursor-default shadow-sm"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
